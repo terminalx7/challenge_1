@@ -7,7 +7,7 @@ loan_costs = [500, 600, 200, 1000, 450]
 # @TODO: Use the `len` function to calculate the total number of loans in the list.
 # Print the number of loans from the list
 total_number_of_loans = len(loan_costs)
-print("The total number of loans is",  total_number_of_loans)
+print("The total number of loans is", total_number_of_loans)
 
 
 
@@ -129,33 +129,6 @@ print(inexpensive_loans)
 
 
 
-loans = [
-    {
-        "loan_price": 700,
-        "remaining_months": 9,
-        "repayment_interval": "monthly",
-        "future_value": 1000,
-    },
-    {
-        "loan_price": 500,
-        "remaining_months": 13,
-        "repayment_interval": "bullet",
-        "future_value": 1000,
-    },
-    {
-        "loan_price": 200,
-        "remaining_months": 16,
-        "repayment_interval": "bullet",
-        "future_value": 1000,
-    },
-    {
-        "loan_price": 900,
-        "remaining_months": 16,
-        "repayment_interval": "bullet",
-        "future_value": 1000,
-    },
-]
-
 import csv
 from pathlib import Path
 
@@ -177,4 +150,3 @@ for loan in inexpensive_loans:
     csvwriter.writerow(loan.values())
 
 print(loan.values())
-\
